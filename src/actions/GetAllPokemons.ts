@@ -10,10 +10,7 @@ async function gettingAllPokemons()
                 URL: data.sprites.front_default,
                 type:data.types.map(item => item.type.name)
             }
-            arreglo.push(aPokemon)
-
-            console.log(i);
-            
+            arreglo.push(aPokemon) 
         }
         return arreglo
 }

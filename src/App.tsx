@@ -1,12 +1,7 @@
-import { useState } from 'react'
-import { useSelector } from 'react-redux'
-import { BrowserRouter } from 'react-router-dom'
-import gettingAllPokemons from './actions/GetAllPokemons'
 
-import './App.css'
-import PokemonList from './components/PokemonList'
+import { BrowserRouter } from 'react-router-dom'
+import Header from './components/Header'
 import PrivateRoutes from './routes/PrivateRoute'
-import { stateType } from './state/Store'
 
 
 function App() {
@@ -14,7 +9,8 @@ function App() {
   //const pokemon = useSelector((state: stateType)=> state.pokemonList)
   
   return (
-    <div>
+    <div className='app-container'>
+      <Header/>
       <BrowserRouter>
       <PrivateRoutes/>
       </BrowserRouter>
