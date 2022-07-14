@@ -11,8 +11,8 @@ const getAllPokemons = async () =>{
      let getRequest = await fetch(`https://pokeapi.co/api/v2/pokemon/${i}/`)
         let data = await getRequest.json()
         console.log(data.name);
-        console.log(data.type);
-        console.log(data.front_default);
+        console.log(data.types.map(item => item.type.name));
+        console.log(data.sprites.front_default);
         
         
         return data.name  
