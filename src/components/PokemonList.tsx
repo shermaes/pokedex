@@ -29,13 +29,13 @@ const PokemonList = () => {
             <div className='all-container'>
             
                 {pokemonSavedInStore.map((pokemon)=>
-                    <PokemonThumb 
+                <PokemonThumb 
                 URL={pokemon.URL} 
                 name_pokemon={pokemon.name_pokemon}
                 type={pokemon.type[0]} _callback={undefined}                
                 />
+
                 )}
-            
             </div>
         </div>
         

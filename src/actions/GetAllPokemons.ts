@@ -21,7 +21,6 @@ const getAllPokemons = async () =>{
         // console.log(data.types.map(item => item.type.name));
         //console.log(data.sprites.front_default);
         console.log(data);
-        
         return data  
     }
 

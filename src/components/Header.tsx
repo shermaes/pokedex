@@ -1,10 +1,9 @@
-
+import image from './../../pokedeximage.png'
 const Header = () => {
   return (
     <nav>
-      <h1 className="font-link" >¡ P o k e d e x !</h1>
+      <p className="font-link" >¡ P o k e d e x !</p>
     </nav>
   )
 }
-
 export default Header
