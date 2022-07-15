@@ -1,14 +1,15 @@
 let i =1;
+let j = 51
 async function gettingAllPokemons()
 {
-     let j = 51
+
      const arreglo = []
         for(i; i<j; i++){
             const data = await getAllPokemons();
                 const aPokemon=  { 
                 name_pokemon: data.name,
                 URL: data.sprites.front_default,
-                type:data.types.map(item => item.type.name)
+                type:data.types.map((item: { type: { name: any; }; }) => item.type.name)
             }
             arreglo.push(aPokemon) 
         }

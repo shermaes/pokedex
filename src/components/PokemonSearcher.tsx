@@ -35,8 +35,8 @@ const PokemonSearcher = () => {
 
   return (
     <div>
-        <h2>Let's look for a Pokemon</h2>
-        <label htmlFor="searchingPokemon">Pokemon:</label>
+        <h2 className='font-linkily'>Let's look for a Pokemon</h2>
+        <label htmlFor="searchingPokemon"  className='font-linkily'>Pokemon:</label>
         <input
         className="pokemon-input"
         type="text"

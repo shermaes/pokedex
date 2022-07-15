@@ -11,6 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.button-nav{
+  text-align:center;
+  width:230px;
+  font-family:'Pokemon Solid', sans-serif;
+  font-weight: 0;
+  border-radius: 10px;
+  margin: 50px 50px;
+  padding: 15px 30px;
+  text-decoration: none;
+  color:#747bff;
+  background-color: #f8dff7;
+  
+}
+
 .navigation_bar{
 
   width: 100%;
@@ -30,6 +44,11 @@ code {
 .font-link{
   font-family: 'Pokemon Solid', sans-serif;
   font-size: 80px;
+}
+.font-linkily{
+  font-family: 'Pokemon Solid', sans-serif;
+  font-size: 20px;
+  text-align: center;
 }
 
 .img {
@@ -113,7 +132,7 @@ code {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  padding: 3rem 0.5rem;
+  padding: 3rem 0.8rem;
 }
 .pokemon-container {
   display: flex;
@@ -126,6 +145,8 @@ code {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  margin: 50px 50px;
+  padding: 15px 30px;
 }
 .thumb-container {
   display: flex;

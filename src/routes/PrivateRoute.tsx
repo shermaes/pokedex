@@ -7,8 +7,12 @@ function PrivateRoutes() {
     return(
     <div >      
     <div className="navigation_bar">
+      <a className="button-nav"> 
         <Link to="/pokemonList" style={{ textDecoration: 'none' }} className="link">Pokemon List</Link>
+        </a>
+        <a className="button-nav">
         <Link to="/pokemonSearch"  style={{ textDecoration: 'none' }} className="link">Pokemon Searcher</Link>
+        </a>
         <Routes>
           <Route path="/pokemonList" element={<PokemonList/>}></Route> 
           <Route path="/pokemonSearch" element={<PokemonSearcher/>}></Route> 
